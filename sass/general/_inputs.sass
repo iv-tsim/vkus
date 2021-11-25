@@ -1,0 +1,35 @@
+.input
+    appearance: none
+    border-radius: 0
+    font-family: "AvertaCY"
+    background: transparent
+    border: 1px solid #fff
+    resize: none
+    font-size: 18px
+    padding: 13px 25px
+    transition: .3s background-color, .3s border-color
+    width: 100%
+    &::-webkit-input-placeholder
+        color: #fff
+        transition: .3s color
+    &::-moz-placeholder
+        color: #fff
+        transition: .3s color
+    &:hover, &:focus
+        background-color: #fff
+        border-color: $light
+        &::-webkit-input-placeholder
+            color: #000
+        &::-moz-placeholder
+            color: #000
+    &_gray
+        border-color: $gray2
+        &::-webkit-input-placeholder
+            color: $gray2
+        &::-moz-placeholder
+            color: $gray2
+
+@media (max-width: 800px)
+    .input
+        font-size: 16px
+        padding: 10px 20px

@@ -1,0 +1,81 @@
+.slider
+    padding-bottom: 60px
+    &-slider
+        padding: 30px 20px
+        width: calc(100% + 40px)
+        left: -20px
+    &-title
+        margin-bottom: 30px
+    &-wrapper
+        position: relative
+    &-arrow
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        cursor: pointer
+        z-index: 2
+        &__left
+            left: -30px
+        &__right
+            right: -30px
+    &-pagination
+        display: flex
+        align-items: center
+        justify-content: center
+        min-height: 25px
+        margin-top: 40px
+        .swiper-pagination-bullet
+            height: 15px
+            width: 15px
+            border-radius: 50%
+            background-color: $gray2
+            opacity: 1
+            transition: .3s width, .3s height, .3s background-color
+            margin: 0 7px
+            &.swiper-pagination-bullet-active
+                background-color: $light
+                height: 25px
+                width: 25px
+
+@media (max-width: 1500px)
+    .slider
+        padding-bottom: 50px
+        &-title
+            margin-bottom: 20px
+        &-pagination
+            margin-top: 30px
+        &-arrow
+            &__left
+                left: 10px
+            &__right
+                right: 10px
+
+@media (max-width: 1200px)
+    .slider
+        padding-bottom: 40px
+        &-title
+            margin-bottom: 10px
+        &-pagination
+            margin-top: 20px
+
+@media (max-width: 800px)
+    .slider
+        padding-bottom: 30px
+        &-title
+            margin-bottom: 0
+        &-pagination
+            margin-top: 10px
+
+@media (max-width: 600px)
+    .slider
+        padding-bottom: 30px
+        &-pagination
+            margin-top: 0
+            min-height: 20px
+            .swiper-pagination-bullet
+                height: 12px
+                width: 12px
+                margin: 0 5px
+                &.swiper-pagination-bullet-active
+                    height: 20px
+                    width: 20px

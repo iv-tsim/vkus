@@ -1,0 +1,187 @@
+.card
+    background-color: #fff
+    border-radius: 50px
+    box-shadow: $shadow
+    padding-top: 30px
+    padding-bottom: 50px
+    &-wrapper
+        padding-bottom: 150px
+    &-top
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-wrap: wrap
+        margin-bottom: 25px
+        &__item
+            margin-right: 15px
+            margin-bottom: 15px
+            border-radius: 25px
+            border: 1px solid $light
+            color: $light
+            transition: .3s color, .3s background-color
+            font-size: 18px
+            padding: 13px 15px
+            &:hover, &.active
+                background-color: $light
+                color: #fff
+    &-main
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        grid-gap: 50px
+    &-img
+        margin: 0 auto
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: 70%
+        &__wrapper
+            grid-column: span 4 / auto
+            box-shadow: $shadow
+            border-radius: 20px
+            margin-bottom: -110px
+            background-color: #fff
+            display: flex
+            width: 100%
+        &__slider
+            width: 100%
+            &-arrow
+                &__left
+                    left: 20px
+                &__right
+                    right: 20px
+        &__sizer
+            padding-bottom: 80%
+    &-item
+        &__caption
+            font-weight: 300
+            margin-bottom: 15px
+        &__title
+            font-size: 24px
+            font-weight: 700
+        &__wrapper
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            &:first-child
+                grid-column: 2 / 5
+            &:last-child
+                grid-column: 9 / 12
+        &__top
+            display: flex
+            align-items: flex-start
+            margin-bottom: 30px
+            width: 100%
+            .card-item
+                width: 50%
+    &-video
+        margin-top: 60px
+    &-btn
+        margin-top: 60px
+
+@media (max-width: 1500px)
+    .card
+        padding-top: 20px
+        padding-bottom: 40px
+        &-top
+            margin-bottom: 15px
+            &__item
+                margin-right: 15px
+        &-main
+            grid-gap: 40px
+        &-item
+            &__title
+                font-size: 22px
+        &-img
+            &__wrapper
+                margin-bottom: -90px
+        &-video, &-btn
+            margin-top: 50px
+
+@media (max-width: 1200px)
+    .card
+        padding-top: 15px
+        padding-bottom: 30px
+        &-top
+            margin-bottom: 5px
+            &__item
+                margin-right: 10px
+        &-main
+            grid-gap: 30px
+            padding: 0 20px
+        &-item
+            &__title
+                font-size: 20px
+            &__wrapper
+                &:first-child
+                    grid-column: 4 span / auto
+                &:last-child
+                    grid-column: 4 span / auto
+            &__top
+                margin-bottom: 20px
+        &-video, &-btn
+            margin-top: 40px
+
+@media (max-width: 1100px)
+    .card
+        padding: 20px
+        &-wrapper
+            padding-bottom: 50px
+        &-main
+            display: flex
+            flex-direction: column
+            grid-gap: 0
+            padding: 0
+        &-img
+            &__wrapper
+                width: 100%
+                max-width: 400px
+                margin-bottom: 30px
+                order: 0
+                align-self: center
+        &-item
+            &__wrapper
+                order: 2
+                &:first-child
+                    order: 1
+                    padding-left: 0
+                &:last-child
+                    padding-right: 0
+            &__caption
+                margin-bottom: 10px
+        &-video, &-btn
+            margin-top: 30px
+
+@media (max-width: 800px)
+    .card
+        &-wrapper
+            padding-bottom: 40px
+        &-img
+            &__wrapper
+                margin-bottom: 20px
+        &-item
+            &__top
+                margin-bottom: 15px
+        &-top
+            &__item
+                padding: 10px
+                font-size: 16px
+        &-video, &-btn
+            margin-top: 20px
+
+@media (max-width: 600px)
+    .card
+        &-wrapper
+            padding-bottom: 30px
+        &-item
+            &__top
+                flex-direction: column
+                margin-bottom: 0
+                .card-item
+                    width: 100%
+                    margin-bottom: 10px
+            &__title
+                font-size: 18px
+            &__caption
+                margin-bottom: 5px
+        &-btn, &-video
+            width: 100%
+            margin-top: 15px

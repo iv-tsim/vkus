@@ -1,0 +1,85 @@
+.numbers
+    padding: 190px 0
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    background-attachment: fixed
+    color: #fff
+    position: relative
+    position: relative
+    &::after
+        display: block
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 36.97%, rgba(0, 0, 0, 0) 100%)
+    &-container
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        grid-gap: 50px
+    &-main
+        grid-column: 7 / 13
+        position: relative
+        z-index: 1
+    &-title
+        margin-bottom: 40px
+    &-text
+        margin-bottom: 40px
+    &-list
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 50px
+    &-item
+        &__number
+            color: $light
+            margin-bottom: 5px
+        &__text
+            font-size: 24px
+
+@media (max-width: 1500px)
+    .numbers
+        padding: 140px 0
+        &-title
+            margin-bottom: 30px
+        &-text
+            margin-bottom: 30px
+        &-item
+            &__text
+                font-size: 22px
+
+@media (max-width: 1200px)
+    .numbers
+        padding: 80px 0
+        &-container
+            display: block
+        &-title
+            margin-bottom: 25px
+        &-text
+            margin-bottom: 25px
+        &-item
+            &__text
+                font-size: 20px
+
+@media (max-width: 800px)
+    .numbers
+        padding: 50px 0
+        &-container
+            display: block
+        &-title
+            margin-bottom: 20px
+        &-text
+            margin-bottom: 20px
+        &-item
+            &__text
+                font-size: 18px
+        &-list
+            grid-gap: 30px
+
+@media (max-width: 600px)
+    .numbers
+        padding: 30px 0
+        &-list
+            grid-gap: 25px

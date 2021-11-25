@@ -1,0 +1,197 @@
+.footer
+    padding: 160px 0
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: cover
+    background-attachment: fixed
+    color: #fff
+    position: relative
+    &-container
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        grid-gap: 50px
+    &-main
+        grid-column: 6 span / auto
+        align-self: flex-end
+    &-app
+        grid-column: 8 / 13
+    &-caption
+        margin-bottom: 40px
+        font-size: 24px
+    &-phone
+        font-size: 50px
+        font-weight: 700
+        color: #fff
+        margin-bottom: 25px
+    &-address
+        font-size: 24px
+        color: #fff
+        margin-bottom: 50px
+        div
+            text-transform: uppercase
+            margin-bottom: 5px
+    &-email
+        color: #fff
+        font-size: 24px
+        margin-bottom: 60px
+    &-socials
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        margin-bottom: 100px
+        &__item
+            margin-right: 50px
+            svg
+                fill: #fff
+                transition: .3s fill
+            &:hover
+                svg
+                    fill: $light
+            &:last-child
+                margin-right: 0
+    &-bottom
+        display: flex
+        justify-content: space-between
+        font-size: 14px
+        max-width: 520px
+        a
+            color: #fff
+            max-width: 170px
+    &-title
+        margin-bottom: 20px
+    &-subtitle
+        margin-bottom: 40px
+    &-app
+        &__input
+            margin-bottom: 25px
+        &__textarea
+            min-height: 160px
+        &__bottom
+            display: flex
+            align-items: center
+        &__submit
+            width: 100%
+            max-width: 200px
+        &__policy
+            max-width: 315px
+            margin-left: 20px
+            font-size: 14px
+            a
+                color: #fff
+
+@media (max-width: 1500px)
+    .footer
+        padding: 120px 0
+        &-caption
+            margin-bottom: 30px
+            font-size: 22px
+        &-phone
+            font-size: 40px
+            margin-bottom: 20px
+        &-address
+            font-size: 22px
+            margin-bottom: 40px
+        &-email
+            font-size: 22px
+            margin-bottom: 50px
+        &-socials
+            margin-bottom: 80px
+            &__item
+                margin-right: 50px
+        &-title
+            margin-bottom: 15px
+        &-subtitle
+            margin-bottom: 30px
+        &-app
+            &__input
+                margin-bottom: 20px
+            &__textarea
+                min-height: 150px
+            &__policy
+                margin-left: 15px
+
+@media (max-width: 1200px)
+    .footer
+        padding: 80px 0
+        &-caption
+            margin-bottom: 20px
+            font-size: 20px
+        &-phone
+            font-size: 32px
+            margin-bottom: 15px
+        &-address
+            font-size: 20px
+            margin-bottom: 30px
+        &-email
+            font-size: 20px
+            margin-bottom: 40px
+        &-socials
+            margin-bottom: 60px
+            &__item
+                margin-right: 40px
+        &-subtitle
+            margin-bottom: 20px
+        &-app
+            grid-column: 7 / 13
+
+@media (max-width: 1000px)
+    .footer
+        padding: 50px 0
+        &-container
+            display: flex
+            flex-direction: column
+            grid-gap: 0
+        &-main
+            order: 1
+            width: 100%
+        &-app
+            order: 0
+            margin-bottom: 30px
+        &-bottom
+            max-width: 100%
+        &-caption
+            font-size: 18px
+        &-phone
+            font-size: 24px
+        &-address
+            font-size: 18px
+            margin-bottom: 25px
+        &-email
+            font-size: 18px
+            margin-bottom: 30px
+        &-socials
+            margin-bottom: 40px
+            &__item
+                margin-right: 30px
+        &-subtitle
+            margin-bottom: 15px
+
+@media (max-width: 600px)
+    .footer
+        padding: 30px 0
+        &-caption
+            font-size: 16px
+        &-phone
+            font-size: 20px
+        &-address
+            font-size: 16px
+            margin-bottom: 20px
+        &-email
+            font-size: 16px
+            margin-bottom: 20px
+        &-socials
+            margin-bottom: 20px
+            &__item
+                margin-right: 25px
+        &-app
+            &__bottom
+                flex-direction: column-reverse
+                align-items: flex-start
+            &__policy
+                max-width: 100%
+                margin-left: 0
+                margin-bottom: 15px
+            &__submit
+                max-width: 100%
+            &__input
+                margin-bottom: 15px

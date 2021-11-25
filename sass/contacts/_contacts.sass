@@ -1,0 +1,118 @@
+.contacts
+    padding-bottom: 130px
+    &-title
+        margin-bottom: 70px
+    &-container
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        grid-gap: 50px
+    &-main
+        grid-column: 5 span / auto
+    &-subtitle
+        margin-bottom: 20px
+    &-text
+        margin-bottom: 30px
+    &-input
+        margin-bottom: 25px
+    &-policy
+        display: flex
+        align-items: center
+    &-submit
+        width: 100%
+        max-width: 200px
+        margin-right: 40px
+    &-policy
+        a
+            color: #000
+    &-right
+        grid-column: 7 span / auto
+    &-map
+        height: 400px
+        margin-bottom: 50px
+    &-item
+        display: flex
+        align-items: center
+        max-width: 380px
+        margin-bottom: 25px
+        &:last-child
+            margin-bottom: 0
+        &__img
+            margin-right: 20px
+            min-width: 23px
+            img
+                display: block
+        a
+            color: #000
+            transition: .3s color
+        &:hover
+            a
+                color: $light
+    &-bottom
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        &__left
+            .contacts-item
+                &:first-child
+                    align-items: flex-start
+
+@media (max-width: 1500px)
+    .contacts
+        padding-bottom: 90px
+        &-title
+            margin-bottom: 50px
+        &-container
+            grid-gap: 40px
+        &-subtitle
+            margin-bottom: 15px
+        &-text
+            margin-bottom: 20px
+        &-input
+            margin-bottom: 20px
+        &-submit
+            margin-right: 30px
+        &-map
+            height: 370px
+            margin-bottom: 40px
+        &-item
+            margin-bottom: 20px
+            &__img
+                margin-right: 15px
+                min-width: 23px
+
+@media (max-width: 1200px)
+    .contacts
+        padding-bottom: 60px
+        &-title
+            margin-bottom: 40px
+        &-container
+            display: block
+        &-main
+            margin-bottom: 40px
+        &-map
+            height: 300px
+            margin-bottom: 30px
+
+@media (max-width: 800px)
+    .contacts
+        padding-bottom: 45px
+        &-title
+            margin-bottom: 30px
+        &-main
+            margin-bottom: 30px
+
+@media (max-width: 600px)
+    .contacts
+        padding-bottom: 30px
+        &-title
+            margin-bottom: 20px
+        &-main
+            margin-bottom: 20px
+        &-map
+            margin-bottom: 20px
+        &-policy
+            flex-direction: column-reverse
+            align-items: flex-start
+        &-submit
+            max-width: 100%
+            margin-top: 15px

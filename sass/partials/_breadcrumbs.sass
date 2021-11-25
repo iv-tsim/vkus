@@ -1,0 +1,29 @@
+.breadcrumbs
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    color: $gray
+    padding-top: 100px
+    padding-bottom: 20px
+    &-item
+        color: $gray
+    &-dec
+        margin: 0 15px
+
+@media (max-width: 1500px)
+    .breadcrumbs
+        padding-top: 70px
+
+@media (max-width: 1200px)
+    .breadcrumbs
+        padding-top: 50px
+
+@media (max-width: 800px)
+    .breadcrumbs
+        padding-top: 35px
+        &-dec
+            margin: 0 10px
+
+@media (max-width: 600px)
+    .breadcrumbs
+        padding-top: 20px

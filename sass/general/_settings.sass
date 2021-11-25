@@ -1,0 +1,84 @@
+@import "variables"
+@import "fonts"
+
+// Общие настройки
+
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+*
+    margin: 0
+    outline: none
+    padding: 0
+
+body
+    font-family: "AvertaCY", sans-serif
+    font-weight: 400
+    font-size: 16px
+    color: #000
+
+a
+    display: inline-block
+    text-decoration: none
+
+.wrapper
+    display: flex
+    flex-direction: column
+    width: 100%
+    overflow-x: hidden
+    min-height: 100vh
+    &.gray
+        background-color: #EDEFF1
+
+@media (min-width: 1700px)
+    .block
+        padding-left: 300px !important
+
+.content
+    flex: 1 0 auto
+
+.footer
+    flex: 0 0 auto
+
+.container
+    margin: 0 auto
+    padding: 0 15px
+    max-width: 1430px
+
+.alertify-notifier .ajs-message.ajs-warning
+    box-shadow: 0 0 3px #333
+    background: #fff
+
+.alertify-notifier .ajs-message.ajs-success
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5)
+    color: #fff
+    background: rgba(40, 136, 62, 0.9)
+
+.alertify-notifier
+    z-index: 99998
+
+.leaf
+    position: absolute
+    z-index: 1
+    &-1
+        left: 46px
+        bottom: 75px
+    &-2
+        top: -30px
+        right: 29%
+    &-3
+        bottom: -72px
+        left: 32%
+    &-4
+        top: -100px
+        right: 80px
+
+@media (max-width: 1400px)
+    .leaf
+        display: none
+
+@import "buttons"
+@import "text"
+@import "inputs"
